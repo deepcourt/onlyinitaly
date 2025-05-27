@@ -28,4 +28,53 @@
             <p>This platform serves as a space to gather our collective stories. By doing so, we aim to highlight distinct patterns in service interactions and systemic issues within Italy, which often feel different from other parts of the world.</p>
             <p>Our hope is that by collecting these narratives, Italy can use them as valuable feedback to foster improvements, benefiting both foreigners who choose to live here and the Italian people themselves.</p>
             <p class="anonymous-note"><strong>POSTS ARE FULLY ANONYMOUS AND YOUR EMAIL AND USERNAME ARE NOT SHARED EVER.</strong></p>
-            <p class="update-note"><em>Update
+            <p class="update-note"><em>Update: We plan to compile the most impactful stories and pressing issues, and submit them to relevant Italian authorities and members of parliament soon to ensure your voices are heard!</em></p>
+        </section>
+
+        <section id="featurebase-section" class="featurebase-embed">
+            <script>
+            !(function(e,t){const a="featurebase-sdk";function n(){if(!t.getElementById(a)){var e=t.createElement("script");(e.id=a),(e.src="https://do.featurebase.app/js/sdk.js"),t.getElementsByTagName("script")[0].parentNode.insertBefore(e,t.getElementsByTagName("script")[0])}}"function"!=typeof e.Featurebase&&(e.Featurebase=function(){(e.Featurebase.q=e.Featurebase.q||[]).push(arguments)}),"complete"===t.readyState||"interactive"===t.readyState?n():t.addEventListener("DOMContentLoaded",n)})(window,document);
+            </script>
+
+            <div data-featurebase-embed></div>
+
+            <script>
+              Featurebase('init_embed_widget', {
+                /* Required - Organization identifier */
+                organization: 'onlyinitaly', // This is your specific Featurebase organization name
+                
+                embedOptions: {
+                  path: '/', // Initial page to load: '/' for feedback board
+                  filters: '', // No default filters needed
+                },
+                
+                /* Optional - Styling configuration */
+                stylingOptions: {
+                  theme: 'light', // Theme: 'light'
+                  hideMenu: false, // Menu visibility: false
+                  hideLogo: false, // Logo visibility: false
+                },
+                
+                /* Optional - User authentication & data */
+                // user: { // Not needed for anonymous/basic setup
+                //   jwt: '',
+                //   metadata: {}
+                // },
+                
+                /* Optional - Localization */
+                // locale: 'en' // Default English is fine, so it's commented out
+              })
+            </script>
+
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
