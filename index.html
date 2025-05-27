@@ -32,6 +32,41 @@
         </section>
 
         <section id="featurebase-section" class="featurebase-embed">
+            <script>
+            !(function(e,t){const a="featurebase-sdk";function n(){if(!t.getElementById(a)){var e=t.createElement("script");(e.id=a),(e.src="https://do.featurebase.app/js/sdk.js"),t.getElementsByTagName("script")[0].parentNode.insertBefore(e,t.getElementsByTagName("script")[0])}}"function"!=typeof e.Featurebase&&(e.Featurebase=function(){(e.Featurebase.q=e.Featurebase.q||[]).push(arguments)}),"complete"===t.readyState||"interactive"===t.readyState?n():t.addEventListener("DOMContentLoaded",n)})(window,document);
+            </script>
+
+            <div data-featurebase-embed></div>
+
+            <script>
+              Featurebase('init_embed_widget', {
+                /* Required - Organization identifier */
+                organization: 'onlyinitaly', // This is your specific Featurebase organization name
+                
+                embedOptions: {
+                  path: '/', // Initial page to load: '/' for feedback board (as requested)
+                  filters: '', // No default filters needed
+                  // routeSyncingBasePath: '' // ADVANCED - Not needed for this basic setup
+                },
+                
+                /* Optional - Styling configuration */
+                stylingOptions: {
+                  theme: 'light', // Theme: 'light' (as requested, or default)
+                  hideMenu: false, // Menu visibility: false (as requested)
+                  hideLogo: false, // Logo visibility: false (as requested)
+                },
+                
+                /* Optional - User authentication & data */
+                // user: { // Not needed for anonymous/basic setup
+                //   jwt: '',
+                //   metadata: {}
+                // },
+                
+                /* Optional - Localization */
+                // locale: 'en' // Default English is fine, so it's commented out
+              })
+            </script>
+
             </section>
     </main>
 
